@@ -1,0 +1,16 @@
+<div>
+<%= @employee.first_name%>  
+</div>
+<div>
+<%= @employee.last_name%>
+</div>
+<div>
+<%= @employee.email%>
+</div>
+<div>
+<%= @employee.birthdate%>
+</div>
+<div>
+<%= @employee.ssn%>
+</div>
+<%= link_to "delete", "/employees/#{params[:id]}", method: :delete %>

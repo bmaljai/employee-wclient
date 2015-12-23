@@ -1,0 +1,7 @@
+<%= form_tag "/employees/#{params[:id]}", method: :patch do %>
+  <div>
+  <%= label_tag "first_name" %>
+  <%= text_field_tag "first_name", @employee["first_name"] %>
+  </div>
+  <%= submit_tag "Create Employee" %>
+<% end %>
